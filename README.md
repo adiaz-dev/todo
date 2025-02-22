@@ -1,28 +1,6 @@
-# todo
-Task manager
-# TODO
-Task Manager
-
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -30,19 +8,17 @@ Task Manager
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/first-results-ajoxolt-only.png" alt="Logo" width="150" height="150">
   </a>
 
-<h3 align="center">Best-README-Template</h3>
+<h3 align="center">TODO</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Task Manager!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -93,9 +69,12 @@ Task Manager
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
 Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* It needs to include AOP, with all its features
+* I need to use Autowire
+* Use @EnableGlobalMethodSecurity(jsr250Enabled = true) to check its impact
+* Use JPA
+* Need to use REST
+* Needs to be Web app
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
@@ -108,15 +87,11 @@ Use the `BLANK_README.md` to get started.
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+ 
+* [![Java][Java.com]][Java-url]
+* [![SpringBoot][SpringBoot.com]][SpringBoot-url]
+* [![MySQL][MySQL.com]][MySQL-url]
+* [![IntelliJIDEA][IntelliJIDEA.com]][IntelliJIDEA-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +122,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Install NPM packages
    ```sh
-   npm install
+     mvn spring-boot:run -Dspring-boot.run.profiles=localmysql
    ```
 4. Enter your API in `config.js`
    ```js
@@ -159,6 +134,7 @@ _Below is an example of how you can instruct your audience on installing and set
    git remote -v # confirm the changes
    ```
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -169,10 +145,20 @@ _Below is an example of how you can instruct your audience on installing and set
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
+In IntellJ, activiate the profile on the TodoApplication
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+1. Available endpoints
+   ```sh
+    curl http://localhost:8080/api/v1/tasks/check
+    curl http://localhost:8080/actuator/health
+   ```
+3. Run the standalone
+   ```java
+      java -jar target/todo-0.0.1-SNAPSHOT.jar
+      java -jar target/todo-0.0.1-SNAPSHOT.jar --spring.profiles.active=localmysql
+   ```
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -207,29 +193,23 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+    <img src = "https://contrib.rocks/image?repo=adiaz-dev/todo" alt="contrib.rocks image"/>
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
-
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
-
+Distributed under the Apache License Version 2.0. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
+Augusto Diaz - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/adiaz-dev/todo](https://github.com/adiaz-dev/todo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -284,23 +264,13 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com
+[Java.com]:https://img.shields.io/badge/Java-orange?style=flat&logo=openjdk&style=for-the-badge&logoColor=white
+[Java-url]: https://www.java.com/en/
+[SpringBoot.com]:https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&style=for-the-badge&logoColor=fff
+[SpringBoot-url]:https://spring.io/projects/spring-boot
+[MySQL.com]:https://img.shields.io/badge/MySQL-4479A1?logo=mysql&style=for-the-badge&logoColor=fff
+[MySQL-url]:https://www.mysql.com/
+[IntelliJIDEA.com]:https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&style=for-the-badge&&logoColor=white
+[IntelliJIDEA-url]:https://www.jetbrains.com/idea/
 
-
-
-2. It needs to include AOP, with all its features
-2. I need to use Autowire
-3. Use @EnableGlobalMethodSecurity(jsr250Enabled = true) to check its impact 
-4. Use JPA
-5. Need to use REST
-6. Needs to be Web app
-7. 
-
-Run with a profile
-1. In IntellJ, activiate the profile on the TodoApplication
-2. mvn spring-boot:run -Dspring-boot.run.profiles=localmysql
-3. java -jar target/todo-0.0.1-SNAPSHOT.jar
-4. java -jar target/todo-0.0.1-SNAPSHOT.jar --spring.profiles.active=localmysql
-Test manually
-curl http://localhost:8080/api/v1/tasks/check
-curl http://localhost:8080/actuator/health
-5. 
+<!-- More badges: https://github.com/inttter/md-badges -->
