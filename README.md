@@ -1,6 +1,3 @@
-# TODO
-Task Manager
-
 1. It needs to include AOP, with all its features
 2. I need to use Autowire
 3. Use @EnableGlobalMethodSecurity(jsr250Enabled = true) to check its impact 
