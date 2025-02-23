@@ -75,7 +75,12 @@ Here's why:
 * Use JPA
 * Need to use REST
 * Needs to be Web app
-
+* We need to se the @annotation designator of AOP
+* Include an example of the security chain filter SecurityFilterChain
+* Include Security filters via URLs
+* Use antMatcher and mvcMatchers
+* Use conditionals such as instanciating a Bean for a profile if a condition is met
+* Use @Value
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
 Use the `BLANK_README.md` to get started.
